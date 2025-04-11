@@ -71,7 +71,7 @@ python ethhackx.py --target <your_target> --headless
 
 ## 🤝 Contributing
 
-(Optional: Add contribution guidelines if you want others to contribute)
+free feel to contribute
 
 ## 📄 License
 
