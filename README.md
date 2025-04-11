@@ -1,6 +1,6 @@
 # EthHackX - Interactive Ethical Hacking Framework
 
-![EthHackX CLI Screenshot](ethhackx_cli_screenshot.png)
+![EthHackX CLI Screenshot](image/ethhackx_cli_screenshot.png)
 
 EthHackX is a Python-based framework designed to streamline common tasks in ethical hacking and penetration testing workflows. It provides an interactive command-line interface (CLI) to guide users through reconnaissance, scanning, basic exploitation, and reporting.
 
