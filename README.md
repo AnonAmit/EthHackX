@@ -112,4 +112,3 @@ ethhackx/
 └── tests/                  # Unit and integration tests (optional)
     └── __init__.py
 ``` 
-(Choose and add a license, e.g., MIT) 
