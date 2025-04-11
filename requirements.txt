@@ -1,0 +1,28 @@
+rich
+questionary
+pyfiglet
+# Dependencies for modules (add as needed)
+requests # Added for GeoIP
+# python-whois # Optional, only needed if the whois command isn't available
+# python-nmap # Consider using this library for better Nmap parsing
+# dnspython
+# beautifulsoup4
+# Wappalyzer
+# sqlmap # (Installation required separately)
+# nuclei # (Installation required separately)
+# nikto # (Installation required separately)
+# subfinder # (Installation required separately)
+# masscan # (Installation required separately)
+# sslscan # (Installation required separately)
+# wpscan # (Installation required separately)
+# metasploit-framework # (Installation required separately)
+# External Tools Required:
+# - nmap
+# - subfinder
+# - dig (or nslookup fallback needed)
+# - whois (or python-whois library)
+# - nikto
+# - nuclei
+# - sslscan
+# - wpscan (Requires Ruby)
+# - sqlmap 

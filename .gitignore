@@ -1,0 +1,27 @@
+# Python runtime files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+*/venv/
+.venv/
+*/.venv/
+ENV/
+*/ENV/
+env/
+*/env/
+
+# User configuration directory
+.ethhackx/
+
+# Results and logs
+results/
+logs/
+
+# IDE / Editor specific
+.vscode/
+.idea/
+*.swp
+*~ 
