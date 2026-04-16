@@ -69,46 +69,7 @@ To run the automated sequence non-interactively against a target:
 python ethhackx.py --target <your_target> --headless
 ```
 
-## 🤝 Contributing
-
-feel free to contribute
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Project Structure
-
-```
-ethhackx/
-├── ethhackx.py             # Main entry point
-├── requirements.txt        # Python dependencies
-├── Project-TO-DO-List.txt  # Development task list
-├── README.md               # This file
-├── logs/                   # Directory for log files
-│   └── .gitkeep
-├── reports/                # Directory for generated reports
-│   └── .gitkeep
-├── ethhackx/               # Main package directory
-│   ├── __init__.py
-│   ├── core/                 # Core components (CLI, config, logging, etc.)
-│   │   ├── __init__.py
-│   │   ├── cli.py
-│   │   ├── config.py
-│   │   ├── executor.py
-│   │   ├── logger.py
-│   │   └── storage.py
-│   ├── modules/              # Functional modules
-│   │   ├── __init__.py
-│   │   ├── auto.py
-│   │   ├── exploit.py
-│   │   ├── post_exploit.py
-│   │   ├── recon.py
-│   │   ├── report.py
-│   │   ├── scan.py
-│   │   └── utils_mod.py
-│   └── utils/                # General utility functions
-│       └── __init__.py
-└── tests/                  # Unit and integration tests (optional)
-    └── __init__.py
-``` 
