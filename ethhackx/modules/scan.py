@@ -320,13 +320,14 @@ def run_wpscan(target, headless=False): # Add headless flag if called from auto
     is_likely_wp = False
     wp_check_error = None
     try:
-        import requests
+        import requests, urllib3
         common_paths = ["/wp-login.php", "/wp-admin/", "/wp-includes/js/wp-embed.min.js"]
         with requests.Session() as session:
             session.headers.update({'User-Agent': 'Mozilla/5.0 EthHackX'})
             session.timeout = 10 # Increased timeout slightly
             session.verify = False # Ignore SSL errors
-            requests.packages.urllib3.disable_warnings(requests.packages.urllib3.exceptions.InsecureRequestWarning)
+            log.warning("SSL verification disabled. Security risk.")
+            urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
             for path in common_paths:
                 check_url = target.rstrip('/') + path

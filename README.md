@@ -58,7 +58,7 @@ Follow the interactive prompts:
 1.  Enter the target domain or IP address.
 2.  Choose a module from the main menu (Recon, Scan, Exploit, Post-Exploit, Auto Attack, Utilities, Report).
 3.  Follow the sub-menus within each module.
-4.  Results are saved automatically in the `results/` directory.
+4.  Results are saved automatically in the `reports/` directory.
 5.  Logs are saved in the `logs/` directory.
 
 **Headless Mode (Auto Attack Only):**
