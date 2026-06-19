@@ -21,12 +21,17 @@ def run_command(command: list, capture_output=True, text=True, shell=False):
             cmd_str_list,
             capture_output=capture_output,
             text=text,
-            check=True, # Raise exception on non-zero exit code
-            shell=shell, # Be cautious with shell=True
-            # Consider adding timeout parameter
-            timeout=300 # Add a default timeout (e.g., 5 minutes)
+            shell=shell,
+            timeout=300
         )
-        log.debug(f"Command finished successfully: {cmd_str}")
+        if process.returncode != 0:
+            log.error(f"Command exited with non-zero status ({process.returncode}): {cmd_str}")
+            log.debug(f"Stderr: {process.stderr}")
+            console.print(f"[bold red]Error executing command (Code: {process.returncode}): {cmd_str}[/bold red]")
+            if process.stderr:
+                console.print(f"[red]Stderr:\n{process.stderr.strip()}[/red]")
+        else:
+            log.debug(f"Command finished successfully: {cmd_str}")
         return process.stdout, process.stderr
     except FileNotFoundError:
         error_msg = f"Command not found: {command[0]}. Please ensure it is installed and in PATH."

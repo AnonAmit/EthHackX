@@ -50,7 +50,7 @@ HASH_REGEX = {
     re.compile(r'^[a-f0-9]{96}$', re.IGNORECASE): "SHA-384",
     re.compile(r'^[a-f0-9]{128}$', re.IGNORECASE): "SHA-512",
     re.compile(r'^\$1\$[a-zA-Z0-9./]{8}\$[a-zA-Z0-9./]{22}$'): "MD5 Crypt", # $1$salt$hash
-    re.compile(r'^\$2[axy]?\$[0-9]{2}\$[a-zA-Z0-9./]{53}$'): "Blowfish Crypt (bcrypt)", # $2a$cost$salt+hash
+    re.compile(r'^\$2[abxy]?\$[0-9]{2}\$[a-zA-Z0-9./]{53}$'): "Blowfish Crypt (bcrypt)", # $2a$cost$salt+hash
     re.compile(r'^\$5\$[a-zA-Z0-9./]{8,16}\$[a-zA-Z0-9./]{43}$'): "SHA-256 Crypt", # $5$rounds=N$salt$hash / $5$salt$hash
     re.compile(r'^\$6\$[a-zA-Z0-9./]{8,16}\$[a-zA-Z0-9./]{86}$'): "SHA-512 Crypt", # $6$rounds=N$salt$hash / $6$salt$hash
     re.compile(r'^[a-f0-9]{16}$', re.IGNORECASE): "MySQL323 / DES(Unix) / Half MD5?",

@@ -50,6 +50,7 @@ def run_module(module_name, target):
     log.debug(f"Exiting run_module for '{module_name}'")
 
 def main():
+    logger.setup_logging()
     log.info("EthHackX application starting.")
     parser = argparse.ArgumentParser(description="EthHackX - Interactive Ethical Hacking Framework")
     # Add arguments later, e.g., for headless mode
@@ -82,7 +83,6 @@ def main():
     cli.display_banner()
 
     # Basic setup
-    logger.setup_logging() # Activate logging
     log.info("EthHackX interactive session setup complete.")
     # console.print(f"Logs will be saved to: {config.LOGS_DIR / 'ethhackx.log'}") # Optional: Inform user
 
