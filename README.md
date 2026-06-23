@@ -12,7 +12,7 @@ EthHackX is a Python-based framework designed to streamline common tasks in ethi
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/AnonAmit/EthHackX.git # Replace with your actual repo URL
+    git clone https://github.com/AnonAmit/EthHackX.git 
     cd EthHackX
     ```
 
